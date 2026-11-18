@@ -11,6 +11,7 @@ export const metadata:Metadata={
  description:'MTM Recovery offers 24/7 emergency breakdown recovery, towing, auction vehicle collection, jump starts and transport from Manchester. Call 07766 339034.',
  alternates:{canonical:'/'},
  robots:{index:false,follow:true},
- openGraph:{type:'website',siteName:SITE.name,title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester. Call MTM Recovery 24/7.',url:SITE.url},
+ openGraph:{type:'website',siteName:SITE.name,title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester. Call MTM Recovery 24/7.',url:SITE.url,images:[{url:'/mtm-open-graph.webp',width:1200,height:630,alt:'MTM Recovery vehicle recovery and transport services in Manchester'}]},
+ twitter:{card:'summary_large_image',title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester.',images:['/mtm-open-graph.webp']},
 };
 export default function RootLayout({children}:{children:ReactNode}){return <html lang="en-GB"><body><Header/><main>{children}</main><Footer/><FloatingActions/></body></html>}
