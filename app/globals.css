@@ -18,3 +18,33 @@ body{background:var(--bg)}
 .mobile-toggle{background:#351a4e}
 .pill{background:#431a7355;border-color:#8759ab;color:#ffe45c}
 @media(prefers-reduced-motion:reduce){.service-card:hover{transform:none}}
+
+
+/* Purple typography accents to balance the yellow brand highlights. */
+:root{
+  --heading-purple:#d3abf7;
+  --heading-purple-soft:#bc8ce6;
+}
+.eyebrow{color:var(--heading-purple-soft)}
+.hero-content h1 strong{
+  color:var(--heading-purple);
+  text-shadow:0 2px 26px rgba(131,73,174,.20);
+}
+.heading-row h2,.center-head h2{
+  color:var(--text);
+}
+.heading-row h2::first-letter,.center-head h2::first-letter{
+  color:var(--heading-purple);
+}
+.service-info h3,.feature h3,.step h3{
+  color:var(--heading-purple);
+}
+.quote-form h3,.footer h3{
+  color:var(--heading-purple);
+}
+.contact-card small,.faq summary svg{
+  color:var(--heading-purple-soft);
+}
+.service-card:hover .service-info h3,.footer a:hover{
+  color:#e5c9ff;
+}
