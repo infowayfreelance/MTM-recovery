@@ -1,0 +1,3 @@
+import type { MetadataRoute } from 'next';
+import { SITE,SERVICES } from '@/lib/site';
+export default function sitemap():MetadataRoute.Sitemap{const paths=['','/services','/about','/contact','/gallery','/faqs','/service-areas','/privacy-policy','/terms',...SERVICES.map(s=>'/services/'+s.slug)];return paths.map(path=>({url:SITE.url+path,lastModified:new Date(),changeFrequency:'monthly' as const,priority:path===''?1:0.7}));}

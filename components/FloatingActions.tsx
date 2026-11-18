@@ -1,0 +1,3 @@
+import { Phone, MessageCircle } from 'lucide-react';
+import { SITE } from '@/lib/site';
+export default function FloatingActions(){return <div className="floating-actions"><a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" className="float-whatsapp" aria-label="WhatsApp MTM Recovery"><MessageCircle size={24}/></a><a href={'tel:'+SITE.phone} className="float-call" aria-label="Call MTM Recovery"><Phone size={23}/></a></div>}

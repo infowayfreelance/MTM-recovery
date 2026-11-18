@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <section className="section container center-head"><h1>Page not found</h1><p>The page you asked for is unavailable.</p><Link href="/" className="btn btn-primary">Back to home</Link></section>;}
