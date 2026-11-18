@@ -59,3 +59,12 @@ body{background:var(--bg)}
 .gallery-grid figcaption{padding:11px 15px;color:#e5c9ff;font-weight:700;font-size:.88rem}
 @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
+
+/* Official MTM transparent logo: consistent in the header and footer. */
+.wordmark:has(.brand-logo){gap:0;display:inline-flex;align-items:center;line-height:1}
+.brand-logo{display:block;max-width:100%;width:auto;height:auto;object-fit:contain;object-position:left center}
+.brand-logo-header{width:106px;height:auto;max-height:80px}
+.brand-logo-footer{width:150px;height:auto;max-height:118px}
+.header-inner{min-height:94px}
+@media(max-width:1020px){.brand-logo-header{width:96px;max-height:72px}.header-inner{min-height:84px}}
+@media(max-width:680px){.brand-logo-header{width:88px;max-height:66px}.header-inner{min-height:77px}.brand-logo-footer{width:135px}}

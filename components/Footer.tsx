@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Heart, Truck, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Heart, MessageCircle } from 'lucide-react';
 import { SITE, SERVICES } from '@/lib/site';
 export default function Footer(){return <footer className="footer"><div className="container footer-grid">
-  <div><Link className="wordmark" href="/"><span className="mark-icon"><Truck size={23}/></span><span><b><em>MTM</em> Recovery</b><small>24/7 Vehicle Assistance</small></span></Link><p>Vehicle recovery, roadside help, accident recovery and transport enquiries. Based in Manchester, with long-distance vehicle transport across the UK.</p></div>
+  <div><Link className="wordmark" href="/"><img src="/images/mtm/mtm-logo-header.webp" width={750} height={555} className="brand-logo brand-logo-footer" loading="lazy" alt="MTM Recovery – 24/7 Vehicle Recovery Services" title="MTM Recovery" /></Link><p>Vehicle recovery, roadside help, accident recovery and transport enquiries. Based in Manchester, with long-distance vehicle transport across the UK.</p></div>
   <div><h3>Our Services</h3>{SERVICES.slice(0,6).map(s=><Link key={s.slug} href={'/services/'+s.slug}>{s.title}</Link>)}<Link href="/services">All services</Link></div>
   <div><h3>Explore</h3>{[['/about','About Us'],['/service-areas','Service Areas'],['/gallery','Gallery'],['/faqs','FAQs'],['/contact','Contact Us'],['/privacy-policy','Privacy Policy'],['/terms','Terms & Conditions']].map(([href,label])=><Link key={href} href={href}>{label}</Link>)}</div>
   <div><h3>Contact</h3><a href={'tel:'+SITE.phone}><Phone size={16}/>{SITE.phoneDisplay}</a><a href={'mailto:'+SITE.email}><Mail size={16}/>{SITE.email}</a><a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer"><MessageCircle size={16}/>WhatsApp</a><p><MapPin size={16}/> {SITE.location}</p><p>Emergency enquiries: 24 hours a day</p></div>
