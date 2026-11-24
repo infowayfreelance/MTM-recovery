@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import { SITE } from '@/lib/site';
@@ -16,4 +17,4 @@ export const metadata:Metadata={
  openGraph:{type:'website',siteName:SITE.name,title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester. Call MTM Recovery 24/7.',url:'https://mtm-recovery-infowayfreelance-4963.vercel.app',images:[{url:OG_IMAGE,secureUrl:OG_IMAGE,width:1200,height:630,type:'image/webp',alt:'MTM Recovery vehicle recovery and transport services in Manchester'}]},
  twitter:{card:'summary_large_image',title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester.',images:[OG_IMAGE]},
 };
-export default function RootLayout({children}:{children:ReactNode}){return <html lang="en-GB"><body><Header/><main>{children}</main><Footer/><FloatingActions/></body></html>}
+export default function RootLayout({children}:{children:ReactNode}){return <html lang="en-GB"><body><Header/><main>{children}</main><Footer/><FloatingActions/></body><GoogleTagManager gtmId="GTM-3V6RSRNT" /></html>}
