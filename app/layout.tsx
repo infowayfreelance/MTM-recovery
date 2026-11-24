@@ -11,7 +11,8 @@ export const metadata:Metadata={
  title:{default:'MTM Recovery | 24/7 Breakdown Recovery & Towing Manchester',template:'%s | MTM Recovery'},
  description:'MTM Recovery offers 24/7 emergency breakdown recovery, towing, auction vehicle collection, jump starts and transport from Manchester. Call 07766 339034.',
  alternates:{canonical:'/'},
- robots:{index:false,follow:true},
+ robots:{index:true,follow:true},
+ verification:{google:'NvdNRIh7tVbs596x_rZm5J1ZCcHhkkMCatzh21OJi4Y'},
  openGraph:{type:'website',siteName:SITE.name,title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester. Call MTM Recovery 24/7.',url:'https://mtm-recovery-infowayfreelance-4963.vercel.app',images:[{url:OG_IMAGE,secureUrl:OG_IMAGE,width:1200,height:630,type:'image/webp',alt:'MTM Recovery vehicle recovery and transport services in Manchester'}]},
  twitter:{card:'summary_large_image',title:'MTM Recovery | 24/7 Breakdown Recovery & Towing',description:'Emergency recovery, towing and roadside assistance in Manchester.',images:[OG_IMAGE]},
 };
